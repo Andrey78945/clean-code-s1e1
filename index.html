@@ -1,23 +1,26 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen">
 </head>
 <body>
-  <div class="header">
+  <header class="header">
     <img src="./eisenhower-matrix.jpg" alt="Eisenhover-matrix"><a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?</a>
-  </div>
-  <div class="main">
-    <p id="section-add">
-      <label for="new-task">Add Item</label>
+  </header>
+  <main class="main">
+    <section id="section-add">
+      <h2>Add Item</h2>
       <div class="form-task-add">
         <input id="new-task" class="task" type="text">
         <button>Add</button>
       </div>
-    </p>
-    <h3>Todo</h3>
+    </section>
+    <section>
+    <h2>Todo</h2>
     <ul id="incomplete-tasks">
       <li>
         <input type="checkbox">
@@ -34,7 +37,9 @@
         <button class="delete"><img src="./remove.svg" alt="Delete"></button>
       </li>
     </ul>
-    <h3>Completed</h3>
+    </section>
+    <section>
+    <h2>Completed</h2>
     <ul id="completed-tasks">
       <li>
         <input type="checkbox" checked>
@@ -44,7 +49,8 @@
         <button class="delete"><img src="./remove.svg" alt="Delete"></button>
       </li>
     </ul>
-  </div>
+    </section>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
